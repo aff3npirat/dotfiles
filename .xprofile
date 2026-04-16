@@ -1,0 +1,5 @@
+[ -f ~/.ssh/agent.env ] || ( touch ~/.ssh/agent.env && chmod 600 ~/.ssh/agent.env )
+if ! pgrep -u "$(whoami)" ssh-agent; then
+    ssh-agent >~/.ssh/agent.env
+fi
+. ~/.ssh/agent.env
