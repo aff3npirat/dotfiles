@@ -13,7 +13,7 @@ export EDITOR=nano
 # simple alias
 alias ls='ls -1l -a --color=auto'
 alias grep='grep --color=auto'
-
+alias mcdir='mkdir $@ && cd $_'
 
 
 function set_ps1
@@ -29,7 +29,6 @@ function set_ps1
 set_ps1
 unset -f set_ps1
 
-
 # helper function
 function include
 {
@@ -38,10 +37,8 @@ function include
 }
 
 # defined functions
-include ~/scripts/mkmv.sh
+include ~/dotfiles/scripts/mkmv.sh
 alias mvk='mkmv'
-
-include ~/scripts/mcdir.sh
 
 unset -f include
 
