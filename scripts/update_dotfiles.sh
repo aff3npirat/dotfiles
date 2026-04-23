@@ -20,5 +20,7 @@ update .config/i3
 update .config/polybar
 update .config/rofi
 
-mkdir -p "$HOME/.config/VSCodium" && ln -sf "$dotdir/.config/VSCodium/settings.json" "$HOME/.config/VSCodium/settings.json"
+mkdir -p "$HOME/.config/VSCodium/User" && ln -sf "$dotdir/.config/VSCodium/settings.json" "$HOME/.config/VSCodium/User/settings.json"
+ln -sf "$dotdir/.config/VSCodium/keybindings.json" "$HOME/.config/VSCodium/User/keybindings.json"
+
 ln -sf "$dotdir/.ssh" "$HOME/.ssh/config"
