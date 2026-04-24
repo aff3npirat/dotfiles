@@ -1,6 +1,6 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
-    
     "editor.formatOnSave": true,
-    "editor.formatOType": false
+    "editor.formatOType": false,
+    "debug.onTaskErrors": "showErrors"
 }
