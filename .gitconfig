@@ -1,0 +1,6 @@
+[init]
+	defaultBranch = main
+	templatedir = ~/.git_template
+[user]
+	email = 91612967+aff3npirat@users.noreply.github.com
+	name = Jurek Elliesen

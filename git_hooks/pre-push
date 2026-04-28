@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+remote="$1"
+url="$2"
+
+# RO-* prefix marks remote as read-only
+if [[ "$remote" == "RO-*" ]]; then
+    echo "Remote $remote is read only"
+    exit 1
+fi
+
+
+
