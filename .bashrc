@@ -10,17 +10,7 @@ export EDITOR=nano
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# simple alias
-alias ls='ls -1l -a --color=auto'
-alias grep='grep --color=auto'
-
-function mcdir
-{
-    mkdir $@ && cd $_
-    return
-}
-
-
+## THEME ##
 function set_ps1
 {
     local reset='\[\e[0m\]'
@@ -34,16 +24,17 @@ function set_ps1
 set_ps1
 unset -f set_ps1
 
-# helper function
-function include
-{
-    [[ -f $1 ]] && . $1
-    return
-}
 
-# defined functions
-include ~/dotfiles/scripts/mkmv.sh
-alias mvk='mkmv'
+## ENV VARS ##
+projectDirs=$(dir "$XDG_DESKTOP_DIR/projects")
+for v in ${projectDirs}; do
+    CDPATH="${CDPATH}${CDPATH+:}$XDG_DESKTOP_DIR/projects/$v"
+done
+unset projectDirs
 
-unset -f include
 
+## ALIAS ##
+alias ls='ls -1l -a --color=auto'
+alias grep='grep --color=auto'
+
+[[ -f "~/dotfiles/scripts/interactive.sh" ]] && . "~/dotfiles/scripts/interactive.sh"

@@ -1,4 +1,10 @@
-#!/bin/bash
+# Usage:
+#   mcdir PATH
+function mcdir
+{
+    mkdir $@ && cd $_
+}
+
 
 # Usage:
 #   mkmv SOURCE DESTINATION
