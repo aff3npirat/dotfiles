@@ -5,13 +5,6 @@
 #   mkmv -t DESTINATION SOURCE...
 function mkmv
 {
-    # if -t specified -> mkdir -pv $dest
-    # if not -> 
-    # src is dir -> mkdir -pv $dest
-    # src is file ->
-    #     dest ends with / -> mkdir -pv $dest
-    #     dest no trailing / -> mkdir -pv dirname $dest
-
     args=("$@"); i=0
     for (( i=0; $i < ${#}-2; i++ )); do
         [[ ${args[i]} == "-t" || ${args[i]:0:1} != "-" ]] && break
