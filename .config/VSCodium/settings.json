@@ -1,6 +1,9 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
+    "debug.onTaskErrors": "showErrors",
     "editor.formatOnSave": true,
-    "editor.formatOType": false,
-    "debug.onTaskErrors": "showErrors"
+    "editor.formatOnType": false,
+    "editor.autoIndentOnPaste": true,
+    "editor.detectIndentation": false,
+    "editor.indentSize": 4
 }
