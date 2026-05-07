@@ -44,5 +44,10 @@
         "key": "alt+tab",
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
         "when": "!inEditorsPicker || !inQuickOpen"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.explorer.openEditorsView.toggleVisibility",
+        "when": "workbench.explorer.openEditorsView.visible"
     }
 ]

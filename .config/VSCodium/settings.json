@@ -1,9 +1,11 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
     "debug.onTaskErrors": "showErrors",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnType": false,
     "editor.autoIndentOnPaste": true,
     "editor.detectIndentation": false,
-    "editor.indentSize": 4
+    "editor.indentSize": 4,
+    "workbench.colorTheme": "Dark Modern",
+    "explorer.autoReveal": false
 }
