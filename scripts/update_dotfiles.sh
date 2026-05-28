@@ -26,6 +26,7 @@ ln -sf "$dotdir/.config/VSCodium/keybindings.json" "$HOME/.config/VSCodium/User/
 ln -sf "$dotdir/.ssh" "$HOME/.ssh/config"
 
 update .gitconfig
+update .gitignore_global
 update .git_template
 # symlink hooks so they reflect changes to git_hooks/
 ln -sf "$dotdir/git_hooks/pre-push" "$HOME/.git_template/hooks/pre-push"
